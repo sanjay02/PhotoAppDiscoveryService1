@@ -8,7 +8,7 @@ ARG JAR_FILE=target/PhotoAppDiscoveryService1-0.0.1-SNAPSHOT.jar
 WORKDIR /opt/app
 
 # cp target/PhotoAppDiscoveryService1-0.0.1-SNAPSHOT.jar/opt/app/eurekaserver.jar
-COPY ${JAR_FILE} app.jar
+COPY ${JAR_FILE} eurekaserver.jar
 
 # java -jar /opt/app/eurekaserver.jar
 ENTRYPOINT ["java","-jar","eurekaserver.jar"]
